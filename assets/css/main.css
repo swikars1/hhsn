@@ -8606,7 +8606,3 @@ h1, h2, h3, h4 {
 h3 {
 	filter: drop-shadow(1px 6px 2px lightgrey);
 }
-
-.inner {
-	text-align: left;
-}
