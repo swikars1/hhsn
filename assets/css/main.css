@@ -2159,7 +2159,7 @@ input, select, textarea {
 		input[type="button"].wide,
 		button.wide,
 		.button.wide {
-			min-width: 14em;
+			min-width: 16em;
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2756,6 +2756,7 @@ input, select, textarea {
 		list-style: none;
 		margin-left: -1rem;
 		padding-left: 0;
+		flex-wrap: wrap;
 	}
 
 		ul.actions li {
@@ -3453,7 +3454,7 @@ input, select, textarea {
 	}
 
 		.banner.style1 .content {
-			padding: 7rem 7rem 5rem 7rem ;
+			padding: 5rem 7rem 3rem 7rem;
 			-moz-align-self: center;
 			-webkit-align-self: center;
 			-ms-align-self: center;
