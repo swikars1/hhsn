@@ -8607,3 +8607,27 @@ h1, h2, h3, h4 {
 h3 {
 	filter: drop-shadow(1px 6px 2px lightgrey);
 }
+
+.header-class {
+	display: flex;	
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 2% 0 8%;
+}
+.header-logo-wrapper {
+	width: 100px;
+	height: auto;
+}
+.header-logo-wrapper img {
+	max-width: 100%;
+}
+.header-items-container {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+.header-items-container a{
+	text-decoration: unset;
+	font-size: 22px;
+	text-transform: uppercase;
+}
