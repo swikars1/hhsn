@@ -8750,6 +8750,7 @@ h3 {
 }
 .nav-sub-item {
 	padding: 10px 20px;
+	min-width: 100%;
 	width: max-content;
 	position: absolute;
 	display: flex;
