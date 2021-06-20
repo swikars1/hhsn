@@ -16,26 +16,43 @@
 				<!-- One -->
 					<header class="header-class">
 						<div class="header-logo-wrapper">
-							<img src="images/logo.jpg" alt="HHSN logo">
+							<a href="#banner-id" class="smooth-scroll">
+							<img src="images/logo.jpg" alt="HHSN logo"></a>
 						</div>
 						<div class="header-items-container">
-							<div><a href="#first" class="smooth-scroll-middle">Know About Us</a></div>
-							<div><a href="#work-sector" class="smooth-scroll-middle">Work Sector</a></div>
-							<div><a href="#recent-activities" class="smooth-scroll-middle">Recent Activities</a></div>
-							<div><a href="#donate" class="smooth-scroll-middle">Contact Us</a></div>
-							<div><a href="#donate" class="smooth-scroll-middle">Donate</a></div>
+							<div class="pos-rel" id="how-1"><a href="#first" class="smooth-scroll">Know About Us</a>
+								<div class="nav-sub-item" id="ho-1">
+									<a href="#first" class="smooth-scroll">Mission</a>
+									<a href="#first" class="smooth-scroll">Vision</a>
+									<a href="#first" class="smooth-scroll">Values</a>
+									<a href="#first" class="smooth-scroll">Our Story</a>
+								</div>
+							</div>
+							<div class="pos-rel" id="how-2"><a href="#work-sector" class="smooth-scroll">Work Sector</a>
+								<div class="nav-sub-item" id="ho-2">
+									<a href="#first" class="smooth-scroll">Mission</a>
+									<a href="#first" class="smooth-scroll">Vision</a>
+								</div>
+							</div>
+							<div class="pos-rel" id="how-3"><a href="#recent-activities" class="smooth-scroll">Recent Activities</a>
+								<div class="nav-sub-item" id="ho-3">
+									<a href="#first" class="smooth-scroll">Mission</a>
+									<a href="#first" class="smooth-scroll">Vision</a>
+								</div>
+							</div>
+							<div class="pos-rel"><a href="#donate" class="smooth-scroll">Contact Us</a>
+							</div>
+							<div class="pos-rel"><a href="#donate" class="smooth-scroll">Donate</a>
+							</div>
 						</div>
 					</header>
-					<section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+					<section
+						id="banner-id"
+						class="banner style5 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right bg-banner pt-0"
+					>
 						<div class="content">
-							<h1>Helping Heart<br/>Society Nepal</h1>
-							<p class="major">Working for the welfare of needy people since 2009.</p>
-							<ul class="actions">
-								<li><a href="#first" class="button medium wide smooth-scroll-middle">Know About Us</a></li>
-								<li><a href="#work-sector" class="button medium wide smooth-scroll-middle">Work Sector</a></li>
-								<li><a href="#recent-activities" class="button medium wide smooth-scroll-middle">Recent Activities</a></li>
-								<li><a href="#gallery" class="button medium wide smooth-scroll-middle">Gallery</a></li>
-							</ul>
+							<h1 class="color-white">Helping Heart<br/>Society Nepal</h1>
+							<p class="major color-wheat fw-400">Working for the welfare of indigent people since 2009.</p>
 						</div>
 						<div class="image">
 							<img src="images/banner.jpg" alt="" />
@@ -47,13 +64,19 @@
 						<div class="content">
 							<h2>KNOW ABOUT US</h2>
 							<p>
-								<strong>Helping Heart Society Nepal</strong>, established in 2009 A.D is a non-profitable organization working in Nepal since then with a motive of “Working for the welfare of needy people”. Its sectors of work are - to fight against human trafficking, to work for youth and women empowerment, scholarship programs for kids, providing for the marginalized groups and spreading awareness through educational programs among them.<br/><br/>
-								HHSN has been particularly working to fight against Human trafficking with a mission to save young Nepali Daughters and children from being a victim and a prey to the evil sex industry.
-
+								<h4>Mission</h4>
+								To facilitate prevention, protection, and empowerment programs for potential and actual victims of human trafficking.<br /><br />
+								<h4>Vision</h4>
+								To interrupt and eradicate human trafficking in Nepal.<br /><br />
+								<h4>Values</h4>
+								<strong>Integrity</strong>	: We will do all things with the greatest level of trust and responsibility.<br />
+								<strong>Humility</strong>: We will consider others as more important than ourselves.<br />
+								<strong>Dignity</strong>: We will honor the worth of each individual person.<br />
+								<strong>Respect</strong>: We will treat everyone equally and fairly.<br /><br />
+								<h4>Our Story</h4>
+								Established in 2009, <strong>Helping Heart Society Nepal</strong> (HHSN) is a non-profit organization working in Nepal with the motive of “Working for the welfare of indigent people.” Our sectors of work include the fight against human trafficking, youth and women empowerment, scholarship programs for children, providing for marginalized groups, and social and educational awareness programs. Each of these efforts supports our mission of preventing Nepal’s women and children from falling prey to the evils of the human trafficking industry. 
+								Our heart longs to see the people of Nepal set free from the causes and effects of human traffickers who prey on vulnerable women and children. We believe every human being is created with equality and dignity, and no one deserves to be enslaved or taken advantage of by their fellow human beings. Our goal is to see the women and children of Nepal live a life free from the dangers of human trafficking and enjoy a life lived to its full potential.								
 							</p>
-							<ul class="actions stacked">
-								<li><a href="#donate" class="button big wide smooth-scroll-middle">Donate Us</a></li>
-							</ul>
 						</div>
 						<div class="image">
 							<img src="images/spotlight01.jpg" alt="" />
@@ -292,6 +315,10 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
+				$(`#how-${1}`).hover(function(){ $(`#ho-${1}`).addClass('header-mouseover') }, function(){ $(`#ho-${1}`).removeClass('header-mouseover') })
+				$(`#how-${2}`).hover(function(){ $(`#ho-${2}`).addClass('header-mouseover') }, function(){ $(`#ho-${2}`).removeClass('header-mouseover') })
+				$(`#how-${3}`).hover(function(){ $(`#ho-${3}`).addClass('header-mouseover') }, function(){ $(`#ho-${3}`).removeClass('header-mouseover') })
+				$(`#how-${4}`).hover(function(){ $(`#ho-${4}`).addClass('header-mouseover') }, function(){ $(`#ho-${4}`).removeClass('header-mouseover') })
 				$('#hww1').css('margin-bottom', '2rem')
 				$('#hww1c').css('opacity', 0).hide()
 				$("#hww1").on('click', () => {
