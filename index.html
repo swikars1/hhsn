@@ -15,9 +15,13 @@
 
 				<!-- One -->
 					<header class="header-class">
-						<div class="header-logo-wrapper">
-							<a href="#banner-id" class="smooth-scroll">
-							<img src="images/logo.jpg" alt="HHSN logo"></a>
+						<div class="logos-all-wrapper">
+							<div class="header-logo-wrapper">
+								<a href="#banner-id" class="smooth-scroll">
+									<img src="images/logo.jpg" alt="HHSN logo">
+								</a>
+							</div>
+							<p>Helping Heart Society Nepal</p>
 						</div>
 						<div class="header-items-container">
 							<div class="pos-rel" id="how-1"><a href="#first" class="smooth-scroll">Know About Us</a>
@@ -28,10 +32,10 @@
 									<a href="#first" class="smooth-scroll">Our Story</a>
 								</div>
 							</div>
-							<div class="pos-rel" id="how-2"><a href="#work-sector" class="smooth-scroll">Work Sector</a>
+							<div class="pos-rel" id="how-2"><a href="#work-sector" class="smooth-scroll">Our Work Sector</a>
 								<div class="nav-sub-item" id="ho-2">
-									<a href="#first" class="smooth-scroll">Mission</a>
-									<a href="#first" class="smooth-scroll">Vision</a>
+									<a href="#first" class="smooth-scroll">Anti-human trafficking</a>
+									<a href="#first" class="smooth-scroll">Child Sponsership</a>
 								</div>
 							</div>
 							<div class="pos-rel" id="how-3"><a href="#recent-activities" class="smooth-scroll">Recent Activities</a>
@@ -46,6 +50,18 @@
 							</div>
 						</div>
 					</header>
+					<div class="header-mobile">
+						<img style="width:35px; height: auto;" src="images/logo.jpg" alt="HHSN logo">
+						<div id="ham" class="ham"></div>
+					</div>
+					<div class="m-header-items">
+						<img style="width:150px; height: auto;" src="images/logo.jpg" alt="HHSN logo">
+						<p><a href="#first" class="smooth-scroll">Know About Us</a></p>
+						<p><a href="#work-sector" class="smooth-scroll">Our Work Sector</a></p>
+						<p><a href="#recent-activities" class="smooth-scroll">Recent Activities</a></p>
+						<p><a href="#donate" class="smooth-scroll">Contact Us</a></p>
+						<p><a href="#donate" class="smooth-scroll">Donate</a></p>
+					</div>
 					<section
 						id="banner-id"
 						class="banner style5 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right bg-banner pt-0"
@@ -54,8 +70,7 @@
 							<h1 class="color-white">Helping Heart<br/>Society Nepal</h1>
 							<p class="major color-wheat fw-400">Working for the welfare of indigent people since 2009.</p>
 						</div>
-						<div class="image">
-							<img src="images/banner.jpg" alt="" />
+						<div class="image banner-image">
 						</div>
 					</section>
 
@@ -78,8 +93,7 @@
 								Our heart longs to see the people of Nepal set free from the causes and effects of human traffickers who prey on vulnerable women and children. We believe every human being is created with equality and dignity, and no one deserves to be enslaved or taken advantage of by their fellow human beings. Our goal is to see the women and children of Nepal live a life free from the dangers of human trafficking and enjoy a life lived to its full potential.								
 							</p>
 						</div>
-						<div class="image">
-							<img src="images/spotlight01.jpg" alt="" />
+						<div class="image spotlight-image">
 						</div>
 					</section>
 
@@ -319,6 +333,15 @@
 				$(`#how-${2}`).hover(function(){ $(`#ho-${2}`).addClass('header-mouseover') }, function(){ $(`#ho-${2}`).removeClass('header-mouseover') })
 				$(`#how-${3}`).hover(function(){ $(`#ho-${3}`).addClass('header-mouseover') }, function(){ $(`#ho-${3}`).removeClass('header-mouseover') })
 				$(`#how-${4}`).hover(function(){ $(`#ho-${4}`).addClass('header-mouseover') }, function(){ $(`#ho-${4}`).removeClass('header-mouseover') })
+
+				$("#ham").on("click", () => {
+					$(".m-header-items").toggleClass("d-flex")
+					$("#ham").toggleClass("rotate-90")
+				})
+				$(".m-header-items p").on('click', () => {
+					$(".m-header-items").toggleClass("d-flex")
+					$("#ham").toggleClass("rotate-90")
+				})
 				$('#hww1').css('margin-bottom', '2rem')
 				$('#hww1c').css('opacity', 0).hide()
 				$("#hww1").on('click', () => {

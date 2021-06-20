@@ -8620,6 +8620,96 @@ h3 {
 	width:100%;
 	left:0;
 }
+.header-mobile {
+	display: none;
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	z-index: 999;
+	background-color: white;
+	justify-content: space-between;
+	height:60px;
+	align-items: center;
+	padding: 0 20px;
+	cursor: pointer;
+}
+.header-mobile .ham {
+	height:3px;
+	background: black;
+	position: relative;
+	width: 35px;
+	transition: all 200ms linear;
+}
+.header-mobile .ham::after{
+	position: absolute;
+	left:0;
+	right:0;
+	top:10px;
+	bottom: 0;
+	content: "";
+	height:3px;
+	background: black;
+}
+.header-mobile .ham::before{
+	position: absolute;
+	left:0;
+	right:0;
+	top:-10px;
+	bottom: 0;
+	content: "";
+	height:3px;
+	background: black;
+}
+
+.m-header-items {
+	display: none;
+	height: calc(100vh - 60px);
+	background: white;
+	width:100%;
+	flex-direction: column;
+	padding: 20px 60px;
+	font-size: 22px;
+	margin-top: 60px;
+	position: fixed;
+	z-index: 9999;
+	background-color: white;
+	align-items: center;
+	font-weight: 500;
+}
+
+.m-header-items p {
+	border-bottom: 1px solid lightgrey;
+}
+.m-header-items p{
+	color: black;
+	padding: 10px;
+}
+@media (max-width: 810px) {
+	.header-class {
+		display: none;
+	}
+	.header-mobile {
+		display: flex;
+	}
+}
+.rotate-90 {
+	transform: rotate(90deg);
+}
+
+.logos-all-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.logos-all-wrapper > p {
+	font-size: 10px;
+	margin-bottom: 0;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 400;
+}
 .header-logo-wrapper {
 	width: 60px;
 	height: auto;
@@ -8630,7 +8720,10 @@ h3 {
 .header-items-container {
 	display: flex;
 	align-items: center;
-	gap: 70px;
+	gap: 50px;
+}
+.m-header-items a {
+	text-decoration: none;
 }
 
 .header-items-container a{
@@ -8657,7 +8750,7 @@ h3 {
 }
 .nav-sub-item {
 	padding: 10px 20px;
-	width: 100%;
+	width: max-content;
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -8694,4 +8787,22 @@ h3 {
 }
 .pt-0 {
 	padding-top: 0 !important;
+}
+.banner-image {
+	background-image: url(../../images/banner.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.spotlight-image {
+	background-image: url(../../images/spotlight01.jpg);
+	background-attachment: fixed;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: white !important;
+}
+.d-flex {
+	display: flex;
 }
