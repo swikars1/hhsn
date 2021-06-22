@@ -198,7 +198,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 3.5rem;
+		font-size: 4rem;
 		line-height: 1.2;
 	}
 
@@ -4271,9 +4271,8 @@ input, select, textarea {
 
 		.banner.style5 .content {
 			position: relative;
-			width: 40rem;
+			width: 50rem;
 			max-width: 100%;
-			margin-bottom: 2rem;
 			z-index: 1;
 		}
 
@@ -8806,4 +8805,7 @@ h3 {
 }
 .d-flex {
 	display: flex;
+}
+.t-center {
+	text-align: center;
 }
