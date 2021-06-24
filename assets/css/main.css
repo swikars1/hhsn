@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -8720,6 +8721,7 @@ h3 {
 	display: flex;
 	align-items: center;
 	gap: 50px;
+	font-family: 'Montserrat' !important;
 }
 .m-header-items a {
 	text-decoration: none;
@@ -8727,17 +8729,17 @@ h3 {
 
 .header-items-container a{
 	text-decoration: unset;
-	font-size: 20px;
+	font-size: 16px;
 	text-transform: uppercase;
 }
 @media (max-width: 1024px) {
 	.header-items-container a{
-		font-size: 18px;
+		font-size: 14px;
 	}
 }
 @media (max-width: 1000px) {
 	.header-items-container a{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.header-items-container {
 		gap: 20px;
@@ -8808,4 +8810,39 @@ h3 {
 }
 .t-center {
 	text-align: center;
+}
+.bottom-class {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 15%;
+	padding-top:50px;
+	flex-wrap: wrap;
+}
+.bottom-inner {
+	text-align: left;
+}
+.donate-us-wrapper {
+	padding: 5% 6%;
+	text-align: left;
+	line-height: 55px;
+}
+.bottom-inner p {
+	margin: 0 0 0.7rem 0;
+}
+@media (max-width: 1000px) {
+	.donate-us-wrapper {
+		padding: 20px 0;
+		text-align: left;
+		line-height: 35px;
+	}
+}
+@media (max-width: 1000px) {
+	.bottom-class {
+		align-items: center;
+		flex-direction: column;
+		padding: 0 15%;
+		padding-top:50px;
+		flex-wrap: wrap;
+	}
 }
